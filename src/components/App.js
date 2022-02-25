@@ -26,16 +26,16 @@ setFormValues({...formValues,[name]:value})
  <input id="name" name="name" value={formValues.name}
  onChange={handleChange}
  />
- <div>{error.name}</div>
+ <div>{error?error.name:null}</div>
 
   <label> Email :</label>
   <input id="email" name="email" value={formValues.email} onChange={handleChange}/>
-  <div>{error.email}</div>
+  <div>{error?error.email:null}</div>
 
   <label>Password :</label>
   <input id="password" name="password" value={formValues.password}
   onChange={handleChange}/>
-  <div>{error.password}</div>
+  <div>{error?error.password:null}</div>
 
  <label> </label><input id="consent" type="checkbox" />
  
